@@ -1,21 +1,14 @@
--- This Script is Part of the Prometheus Obfuscator by Levno_710
---
--- pipeline.lua
---
--- This Script Provides a Configurable Obfuscation Pipeline that can obfuscate code using different Modules
--- These Modules can simply be added to the pipeline
-
 local config = require("config");
-local Ast    = require("prometheus.ast");
-local Enums  = require("prometheus.enums");
-local util = require("prometheus.util");
-local Parser = require("prometheus.parser");
-local Unparser = require("prometheus.unparser");
+local Ast    = require("Kepler.ast");
+local Enums  = require("Kepler.enums");
+local util = require("Kepler.util");
+local Parser = require("Kepler.parser");
+local Unparser = require("Kepler.unparser");
 local logger = require("logger");
 
 local NameGenerators = require("prometheus.namegenerators");
 
-local Steps = require("prometheus.steps");
+local Steps = require("Kepler.steps");
 
 local lookupify = util.lookupify;
 local LuaVersion = Enums.LuaVersion;
