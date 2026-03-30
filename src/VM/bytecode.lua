@@ -1,7 +1,7 @@
 local bit32 = require("bit") or require("Kepler.bit").bit32;
 local logger = require("logger");
 local util = require("Kepler.util");
-local vmstrings = require("VM.compiler_secure.vmstrings");
+local vmstrings = require("VM.vmstrings");
 local Parser = require("Kepler.parser");
 local enums = require("Kepler.enums");
 
@@ -9,7 +9,7 @@ local LuaVersion = enums.LuaVersion;
 local BIT_MAX_8  = 255;
 local BIT_MAX_16 = 65535;
 
-local InstructionKind = require("VM.compiler_secure.instructionkind");
+local InstructionKind = require("VM.instructionkind");
 
 local Bytecode = {
 	InstructionKind = InstructionKind
