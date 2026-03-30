@@ -1,21 +1,15 @@
--- This Script is Part of the Prometheus Obfuscator by Levno_710
---
--- bytecode.lua
--- This Script contains the Bytecode library for Compiling to Prometheus Bytecode
-
--- For Lua5.1 Compatibility
-local bit32 = require("bit") or require("prometheus.bit").bit32;
+local bit32 = require("bit") or require("Kepler.bit").bit32;
 local logger = require("logger");
-local util = require("prometheus.util");
-local vmstrings = require("prometheus.compiler_secure.vmstrings");
-local Parser = require("prometheus.parser");
-local enums = require("prometheus.enums");
+local util = require("Kepler.util");
+local vmstrings = require("VM.compiler_secure.vmstrings");
+local Parser = require("Kepler.parser");
+local enums = require("Kepler.enums");
 
 local LuaVersion = enums.LuaVersion;
 local BIT_MAX_8  = 255;
 local BIT_MAX_16 = 65535;
 
-local InstructionKind = require("prometheus.compiler_secure.instructionkind");
+local InstructionKind = require("VM.compiler_secure.instructionkind");
 
 local Bytecode = {
 	InstructionKind = InstructionKind
