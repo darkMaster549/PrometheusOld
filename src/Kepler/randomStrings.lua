@@ -1,4 +1,4 @@
-local Ast = require("prometheus.ast");
+local Ast = require("Kepler.ast");
 
 local dictionary = {
 	"getfenv",
