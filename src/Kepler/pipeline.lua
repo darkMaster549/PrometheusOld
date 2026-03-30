@@ -6,7 +6,7 @@ local Parser = require("Kepler.parser");
 local Unparser = require("Kepler.unparser");
 local logger = require("logger");
 
-local NameGenerators = require("prometheus.namegenerators");
+local NameGenerators = require("Kepler.namegenerators");
 
 local Steps = require("Kepler.steps");
 
