@@ -1,12 +1,6 @@
--- This Script is Part of the Prometheus Obfuscator by Levno_710
---
--- WrapInFunction.lua
---
--- This Script provides a Simple Obfuscation Step that wraps the entire Script into a function
-
-local Step = require("prometheus.step");
-local Ast = require("prometheus.ast");
-local Scope = require("prometheus.scope");
+local Step = require("Kepler.step");
+local Ast = require("Kepler.ast");
+local Scope = require("Kepler.scope");
 
 local WrapInFunction = Step:extend();
 WrapInFunction.Description = "This Step Wraps the Entire Script into a Function";
