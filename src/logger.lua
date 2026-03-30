@@ -1,7 +1,3 @@
--- This Script is Part of the Prometheus Obfuscator by Levno_710
---
--- logger.lua
-
 local logger = {}
 local config = require("config");
 local colors = require("colors");
