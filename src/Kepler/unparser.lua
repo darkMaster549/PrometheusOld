@@ -1,20 +1,7 @@
--- This Script is Part of the Prometheus Obfuscator by Levno_710
---
--- unparser.lua
--- Overview:
--- This Script provides a class for lua code generation from an ast
--- This UnParser is Capable of generating LuaU and Lua5.1
--- 
--- Note that a LuaU ast can only be unparsed as LuaU if it contains any continue statements
---
--- Settings Object:
--- luaVersion : The LuaVersion of the Script
---
-
 local config = require("config");
-local Ast    = require("prometheus.ast");
-local Enums  = require("prometheus.enums");
-local util = require("prometheus.util");
+local Ast    = require("Kepler.ast");
+local Enums  = require("Kepler.enums");
+local util = require("Kepler.util");
 
 local lookupify = util.lookupify;
 local LuaVersion = Enums.LuaVersion;
