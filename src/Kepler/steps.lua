@@ -1,4 +1,4 @@
 return {
-	WrapInFunction = require("B.steps.WrapInFunction");
-	Vmify          = require("B.steps.Vmify");
+	WrapInFunction = require("B.B.WrapInFunction");
+	Vmify          = require("B.B.Vmify");
 }
