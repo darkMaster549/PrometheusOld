@@ -1,10 +1,5 @@
--- This Script is Part of the Prometheus Obfuscator by Levno_710
---
--- util.lua
--- This file Provides a Utility function for visiting each node of an ast
-
-local Ast = require("prometheus.ast");
-local util = require("prometheus.util");
+local Ast = require("Kepler.ast");
+local util = require("Kepler.util");
 
 local AstKind = Ast.AstKind;
 local lookupify = util.lookupify;
