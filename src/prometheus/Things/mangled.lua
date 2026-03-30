@@ -1,10 +1,3 @@
--- This Script is Part of the Prometheus Obfuscator by Levno_710
---
--- namegenerators/mangled.lua
---
--- This Script provides a function for generation of mangled names
-
-
 local util = require("prometheus.util");
 local chararray = util.chararray;
 
