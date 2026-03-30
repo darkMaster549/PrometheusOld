@@ -1,9 +1,5 @@
--- This Script is Part of the Prometheus Obfuscator by Levno_710
---
--- Library for Creating Random Literals
-
-local Ast = require("prometheus.ast");
-local RandomStrings = require("prometheus.randomStrings");
+local Ast = require("Kepler.ast");
+local RandomStrings = require("Kepler.randomStrings");
 
 local RandomLiterals = {};
 
