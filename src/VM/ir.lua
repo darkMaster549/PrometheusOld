@@ -1,12 +1,7 @@
--- This Script is Part of the Prometheus Obfuscator by Levno_710
---
--- ir.lua
--- This Script contains the IR library for Compiling to Prometheus Bytecode
-
 local logger = require("logger");
-local util = require("prometheus.util");
+local util = require("Kepler.util");
 
-local Bytecode = require("prometheus.compiler_secure.bytecode");
+local Bytecode = require("VM.bytecode");
 local InstructionKind = Bytecode.InstructionKind
 
 local function Instruction(tb)
